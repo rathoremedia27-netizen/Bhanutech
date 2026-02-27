@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --dark: #111827;
+      --gray: #6b7280;
+      --light: #f9fafb;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.tagline {
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .skills-list,
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill,
+    .project-card {
+      background: var(--white);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .experience-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .experience-item span {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-img">Your Photo</div>
+    <h1>Your Name</h1>
+    <p class="tagline">Your Job Title / Short Professional Tagline</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Replace this text with your professional summary from your resume.
+      Write a short paragraph about who you are, what you specialize in,
+      and what value you bring.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Skill 1</div>
+      <div class="skill">Skill 2</div>
+      <div class="skill">Skill 3</div>
+      <div class="skill">Skill 4</div>
+      <div class="skill">Skill 5</div>
+      <div class="skill">Skill 6</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>Job Title – Company Name</h3>
+      <span>Jan 2022 – Present</span>
+      <p>
+        Describe your responsibilities and achievements in this role.
+        Focus on impact and measurable results.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Previous Job Title – Company Name</h3>
+      <span>Jan 2020 – Dec 2021</span>
+      <p>
+        Describe your responsibilities and key accomplishments.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="project-card">
+        <h3>Project Title</h3>
+        <p>Short description of the project and technologies used.</p>
+        <a href="#" target="_blank">Live Demo</a> |
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Title</h3>
+        <p>Short description of the project and technologies used.</p>
+        <a href="#" target="_blank">Live Demo</a> |
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via:</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
